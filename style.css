@@ -1,0 +1,22 @@
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.next-video-btn {
+    background-color: rgba(0, 0, 255, 0.2);
+    margin: 1rem 0;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-video-btn:hover {
+    background-color: rgba(0, 0, 255, 0.4);
+}
