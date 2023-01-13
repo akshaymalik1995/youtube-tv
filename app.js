@@ -17,8 +17,9 @@ function embedVideo(startIndex=0 , endIndex=Object.keys(videos).length){
         changeVideo()
     }
     const videoId = getYoutubeId(randomVideo.href) 
-    iframe.src = `https://www.youtube.com/embed/${videoId}`
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
     document.querySelector(".video-title").textContent = `${randomVideo.title}`
+    
 }
 
 
