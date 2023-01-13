@@ -4,19 +4,38 @@ function getYoutubeId(url){
     return videoID
 }
 
-function getRandomNumber(num){
-    return Math.floor(Math.random() * num)
+function getRandomNumber(min, max){
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
-function embedVideo(){
+
+function embedVideo(startIndex=0 , endIndex=Object.keys(videos).length){
     const iframe = document.querySelector("iframe")
-    const randomNum = getRandomNumber(Object.keys(videos).length)
+    const randomNum = getRandomNumber(startIndex, endIndex)
     const randomVideo = videos[randomNum]
+    if (!randomVideo) {
+        changeVideo()
+    }
     const videoId = getYoutubeId(randomVideo.href) 
     iframe.src = `https://www.youtube.com/embed/${videoId}`
     document.querySelector(".video-title").textContent = `${randomVideo.title}`
 }
 
 
+function changeVideo(){
+    const channelChoice = document.querySelector("select").value
+    if (channelChoice == ""){
+        startIndex = 0
+        endIndex = Object.keys(videos).length
+    } else {
+        startIndex = channels[channelChoice].startIndex
+        endIndex = channels[channelChoice].endIndex
+        
+    }
+    embedVideo(startIndex, endIndex)
+}
 
-embedVideo()
+let startIndex = 0
+let endIndex = Object.keys(videos).length
+
+embedVideo(startIndex, endIndex)

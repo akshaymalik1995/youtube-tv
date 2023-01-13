@@ -1,8 +1,21 @@
-const channels = [
-    "TED-Ed - YouTube",
-    "The School of Life - YouTube",
-    "Kurzgesagt – In a Nutshell - YouTube",
-]
+const channels = {
+    "TED-Ed - YouTube" : {
+        startIndex : 0,
+        endIndex: 1990,
+    }, 
+    "The School of Life - YouTube" : {
+        startIndex : 1991,
+        endIndex: 2898,
+    },
+    "Kurzgesagt – In a Nutshell - YouTube" : {
+        startIndex : 2899,
+        endIndex: 3091,
+    },
+    "CrashCourse - YouTube" : {
+        startIndex : 3092,
+        endIndex: 4568,
+    },
+}
 
 const videos = {
     "0": {
@@ -9960,11 +9973,7 @@ const videos = {
         "title": "How Containerization Shaped the Modern World",
         "href": "https://www.youtube.com/watch?v=Gn7IoT_WSRA"
     },
-    "1991": {
-        "channel": "The School of Life - YouTube",
-        "title": "INDIA Dominant, Win Series | #INDvSL 2nd ODI | Probo #AakashVani",
-        "href": "https://www.youtube.com/watch?v=t0RKO1_BfT4"
-    },
+    
     "1992": {
         "channel": "The School of Life - YouTube",
         "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
@@ -9975,96 +9984,37 @@ const videos = {
         "title": "Can we eat to starve cancer? - William Li",
         "href": "https://www.youtube.com/watch?v=OjkzfeJz66o"
     },
-    "1994": {
-        "channel": "The School of Life - YouTube",
-        "title": "Match Highlights (Hindi) - Sunrisers Eastern Cape vs Pretoria Capitals | SA20 League",
-        "href": "https://www.youtube.com/watch?v=JkgUYqElZLk"
-    },
-    "1995": {
-        "channel": "The School of Life - YouTube",
-        "title": "Doctor Song Sidhu Moosewala Lofi And Reverb Song 2023",
-        "href": "https://www.youtube.com/watch?v=qJHsvzkMr3o"
-    },
-    "1996": {
-        "channel": "The School of Life - YouTube",
-        "title": "Rocket League Players vs The Rank They Think They Deserve (Attackers Only)",
-        "href": "https://www.youtube.com/watch?v=R5KLddEZBQI"
-    },
-    "1997": {
-        "channel": "The School of Life - YouTube",
-        "title": "FTF Harsha Bhogle 17 1 2001",
-        "href": "https://www.youtube.com/watch?v=vEJfvOA12Bw"
-    },
-    "1998": {
-        "channel": "The School of Life - YouTube",
-        "title": "Mix - Music of India",
-        "href": "https://www.youtube.com/watch?v=VNs_cCtdbPc&list=RDGMEM916WJxafRUGgOvd6dVJkeQVMVNs_cCtdbPc&start_radio=1"
-    },
-    "1999": {
-        "channel": "The School of Life - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
-    "2000": {
-        "channel": "The School of Life - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
+  
+
+  
+
     "2001": {
         "channel": "The School of Life - YouTube",
         "title": "Shoulder Pain? NEVER Sleep In These 3 Positions. Do THIS Instead!",
         "href": "https://www.youtube.com/watch?v=S613qj8XYbw"
     },
-    "2002": {
-        "channel": "The School of Life - YouTube",
-        "title": "Why Players Avoid Real Madrid",
-        "href": "https://www.youtube.com/watch?v=bg7qOzN0t70"
-    },
-    "2003": {
-        "channel": "The School of Life - YouTube",
-        "title": "YOU: Season 4 Part 1 | Official Trailer | Netflix",
-        "href": "https://www.youtube.com/watch?v=3COY_HrMngc"
-    },
-    "2004": {
-        "channel": "The School of Life - YouTube",
-        "title": "Unreal Engine 5 – Full Course for Beginners",
-        "href": "https://www.youtube.com/watch?v=6UlU_FsicK8"
-    },
-    "2005": {
-        "channel": "The School of Life - YouTube",
-        "title": "1 Simple Way To Never Speak A Wrong Word: Part 2: Subtitles English: BK Shivani",
-        "href": "https://www.youtube.com/watch?v=nocWB-Bl324"
-    },
+  
+  
+    
+  
     "2006": {
         "channel": "The School of Life - YouTube",
         "title": "How Semiconductors Ruined East Germany",
         "href": "https://www.youtube.com/watch?v=cxrkC-pMH_s"
     },
-    "2007": {
-        "channel": "The School of Life - YouTube",
-        "title": "I Challenged the Best Woman in USA",
-        "href": "https://www.youtube.com/watch?v=kjAIeLHKXfI"
-    },
+    
     "2008": {
         "channel": "The School of Life - YouTube",
         "title": "How I Grew My Wrists Thicker",
         "href": "https://www.youtube.com/watch?v=uMVjg4VmftQ"
     },
-    "2009": {
-        "channel": "The School of Life - YouTube",
-        "title": "How I Coded An Entire Website Using ChatGPT",
-        "href": "https://www.youtube.com/watch?v=ng438SIXyW4"
-    },
+   
     "2010": {
         "channel": "The School of Life - YouTube",
         "title": "The Importance of Being Single",
         "href": "https://www.youtube.com/watch?v=aAnTwyCJdf0"
     },
-    "2011": {
-        "channel": "The School of Life - YouTube",
-        "title": "भारत जोड़ो यात्रा की कवरेज आज शाम 5 बजे | Bharat Jodo Yatra's coverage today at 5 PM",
-        "href": "https://www.youtube.com/watch?v=OI2CUjk_DfA"
-    },
+  
     "2012": {
         "channel": "The School of Life - YouTube",
         "title": "Hair Experts Debunk 15 Hair Myths | Debunked",
@@ -14501,11 +14451,7 @@ const videos = {
         "href": "https://www.youtube.com/watch?v=osd9AKRCFRM"
     },
 
-    "2899": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "INDIA Dominant, Win Series | #INDvSL 2nd ODI | Probo #AakashVani",
-        "href": "https://www.youtube.com/watch?v=t0RKO1_BfT4"
-    },
+   
     "2900": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
@@ -14516,96 +14462,39 @@ const videos = {
         "title": "Can we eat to starve cancer? - William Li",
         "href": "https://www.youtube.com/watch?v=OjkzfeJz66o"
     },
-    "2902": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Match Highlights (Hindi) - Sunrisers Eastern Cape vs Pretoria Capitals | SA20 League",
-        "href": "https://www.youtube.com/watch?v=JkgUYqElZLk"
-    },
-    "2903": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Doctor Song Sidhu Moosewala Lofi And Reverb Song 2023",
-        "href": "https://www.youtube.com/watch?v=qJHsvzkMr3o"
-    },
-    "2904": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Rocket League Players vs The Rank They Think They Deserve (Attackers Only)",
-        "href": "https://www.youtube.com/watch?v=R5KLddEZBQI"
-    },
-    "2905": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "FTF Harsha Bhogle 17 1 2001",
-        "href": "https://www.youtube.com/watch?v=vEJfvOA12Bw"
-    },
-    "2906": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Mix - Music of India",
-        "href": "https://www.youtube.com/watch?v=VNs_cCtdbPc&list=RDGMEM916WJxafRUGgOvd6dVJkeQVMVNs_cCtdbPc&start_radio=1"
-    },
-    "2907": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
-    "2908": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
+  
+   
+    
+   
+ 
+  
     "2909": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "Shoulder Pain? NEVER Sleep In These 3 Positions. Do THIS Instead!",
         "href": "https://www.youtube.com/watch?v=S613qj8XYbw"
     },
-    "2910": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Why Players Avoid Real Madrid",
-        "href": "https://www.youtube.com/watch?v=bg7qOzN0t70"
-    },
-    "2911": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "YOU: Season 4 Part 1 | Official Trailer | Netflix",
-        "href": "https://www.youtube.com/watch?v=3COY_HrMngc"
-    },
-    "2912": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "Unreal Engine 5 – Full Course for Beginners",
-        "href": "https://www.youtube.com/watch?v=6UlU_FsicK8"
-    },
-    "2913": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "1 Simple Way To Never Speak A Wrong Word: Part 2: Subtitles English: BK Shivani",
-        "href": "https://www.youtube.com/watch?v=nocWB-Bl324"
-    },
+ 
+   
+    
+  
     "2914": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "How Semiconductors Ruined East Germany",
         "href": "https://www.youtube.com/watch?v=cxrkC-pMH_s"
     },
-    "2915": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "I Challenged the Best Woman in USA",
-        "href": "https://www.youtube.com/watch?v=kjAIeLHKXfI"
-    },
+   
     "2916": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "How I Grew My Wrists Thicker",
         "href": "https://www.youtube.com/watch?v=uMVjg4VmftQ"
     },
-    "2917": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "How I Coded An Entire Website Using ChatGPT",
-        "href": "https://www.youtube.com/watch?v=ng438SIXyW4"
-    },
+    
     "2918": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "The Importance of Being Single",
         "href": "https://www.youtube.com/watch?v=aAnTwyCJdf0"
     },
-    "2919": {
-        "channel": "Kurzgesagt – In a Nutshell - YouTube",
-        "title": "भारत जोड़ो यात्रा की कवरेज आज शाम 5 बजे | Bharat Jodo Yatra's coverage today at 5 PM",
-        "href": "https://www.youtube.com/watch?v=OI2CUjk_DfA"
-    },
+
     "2920": {
         "channel": "Kurzgesagt – In a Nutshell - YouTube",
         "title": "Hair Experts Debunk 15 Hair Myths | Debunked",
@@ -15467,11 +15356,7 @@ const videos = {
         "href": "https://www.youtube.com/watch?v=hOfRN0KihOU"
     },
 
-    "3092": {
-        "channel": "CrashCourse - YouTube",
-        "title": "INDIA Dominant, Win Series | #INDvSL 2nd ODI | Probo #AakashVani",
-        "href": "https://www.youtube.com/watch?v=t0RKO1_BfT4"
-    },
+    
     "3093": {
         "channel": "CrashCourse - YouTube",
         "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
@@ -15482,96 +15367,34 @@ const videos = {
         "title": "Can we eat to starve cancer? - William Li",
         "href": "https://www.youtube.com/watch?v=OjkzfeJz66o"
     },
-    "3095": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Match Highlights (Hindi) - Sunrisers Eastern Cape vs Pretoria Capitals | SA20 League",
-        "href": "https://www.youtube.com/watch?v=JkgUYqElZLk"
-    },
-    "3096": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Doctor Song Sidhu Moosewala Lofi And Reverb Song 2023",
-        "href": "https://www.youtube.com/watch?v=qJHsvzkMr3o"
-    },
-    "3097": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Rocket League Players vs The Rank They Think They Deserve (Attackers Only)",
-        "href": "https://www.youtube.com/watch?v=R5KLddEZBQI"
-    },
-    "3098": {
-        "channel": "CrashCourse - YouTube",
-        "title": "FTF Harsha Bhogle 17 1 2001",
-        "href": "https://www.youtube.com/watch?v=vEJfvOA12Bw"
-    },
-    "3099": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Mix - Music of India",
-        "href": "https://www.youtube.com/watch?v=VNs_cCtdbPc&list=RDGMEM916WJxafRUGgOvd6dVJkeQVMVNs_cCtdbPc&start_radio=1"
-    },
-    "3100": {
-        "channel": "CrashCourse - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
-    "3101": {
-        "channel": "CrashCourse - YouTube",
-        "title": "The Afterparty with BIBI",
-        "href": "https://www.youtube.com/watch?v=hD_UJOraiyE&pp=sAQB"
-    },
+    
     "3102": {
         "channel": "CrashCourse - YouTube",
         "title": "Shoulder Pain? NEVER Sleep In These 3 Positions. Do THIS Instead!",
         "href": "https://www.youtube.com/watch?v=S613qj8XYbw"
     },
-    "3103": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Why Players Avoid Real Madrid",
-        "href": "https://www.youtube.com/watch?v=bg7qOzN0t70"
-    },
-    "3104": {
-        "channel": "CrashCourse - YouTube",
-        "title": "YOU: Season 4 Part 1 | Official Trailer | Netflix",
-        "href": "https://www.youtube.com/watch?v=3COY_HrMngc"
-    },
-    "3105": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Unreal Engine 5 – Full Course for Beginners",
-        "href": "https://www.youtube.com/watch?v=6UlU_FsicK8"
-    },
-    "3106": {
-        "channel": "CrashCourse - YouTube",
-        "title": "1 Simple Way To Never Speak A Wrong Word: Part 2: Subtitles English: BK Shivani",
-        "href": "https://www.youtube.com/watch?v=nocWB-Bl324"
-    },
+
+   
+  
+   
     "3107": {
         "channel": "CrashCourse - YouTube",
         "title": "How Semiconductors Ruined East Germany",
         "href": "https://www.youtube.com/watch?v=cxrkC-pMH_s"
     },
-    "3108": {
-        "channel": "CrashCourse - YouTube",
-        "title": "I Challenged the Best Woman in USA",
-        "href": "https://www.youtube.com/watch?v=kjAIeLHKXfI"
-    },
+   
     "3109": {
         "channel": "CrashCourse - YouTube",
         "title": "How I Grew My Wrists Thicker",
         "href": "https://www.youtube.com/watch?v=uMVjg4VmftQ"
     },
-    "3110": {
-        "channel": "CrashCourse - YouTube",
-        "title": "How I Coded An Entire Website Using ChatGPT",
-        "href": "https://www.youtube.com/watch?v=ng438SIXyW4"
-    },
+   
     "3111": {
         "channel": "CrashCourse - YouTube",
         "title": "The Importance of Being Single",
         "href": "https://www.youtube.com/watch?v=aAnTwyCJdf0"
     },
-    "3112": {
-        "channel": "CrashCourse - YouTube",
-        "title": "भारत जोड़ो यात्रा की कवरेज आज शाम 5 बजे | Bharat Jodo Yatra's coverage today at 5 PM",
-        "href": "https://www.youtube.com/watch?v=OI2CUjk_DfA"
-    },
+   
     "3113": {
         "channel": "CrashCourse - YouTube",
         "title": "Hair Experts Debunk 15 Hair Myths | Debunked",
@@ -19777,11 +19600,7 @@ const videos = {
         "title": "Thermodynamics: Crash Course Physics #23",
         "href": "https://www.youtube.com/watch?v=4i1MUWJoI0U"
     },
-    "3954": {
-        "channel": "CrashCourse - YouTube",
-        "title": "Netflix & Chill: Crash Course Philosophy #27",
-        "href": "https://www.youtube.com/watch?v=G30m6XDBTh4"
-    },
+  
     "3955": {
         "channel": "CrashCourse - YouTube",
         "title": "PC Gaming: Crash Course Games #20",

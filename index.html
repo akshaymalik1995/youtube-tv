@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <title>Ted Ed TV</title>
 </head>
+
 <body>
-    <div class="iframe-container">
-        <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="video-title"></div>
-        <button onclick=embedVideo() class="next-video-btn">Next</button>
-    </div>
     
-<script src="videos.js"></script>
-<script src="app.js"></script>
+    <div class="app-container">
+        <div class="choice-container">
+            <form class="form" action="">
+                <label for="cars">Choose a channel:</label>
+                <select class="input-select" onchange=changeVideo() name="channel" id="channel">
+                    <option  selected value>All</option>
+                    <option value="TED-Ed - YouTube">TED-Ed</option>
+                    <option value="The School of Life - YouTube">The School of Life</option>
+                    <option value="Kurzgesagt – In a Nutshell - YouTube">Kurzgesagt – In a Nutshell"</option>
+                    <option value="CrashCourse - YouTube">CrashCourse</option>
+                </select>
+            </form>
+        </div>
+        <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div class="video-title"></div>
+        <button onclick=changeVideo() class="next-video-btn">Next</button>
+    </div>
+
+    <script src="videos.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

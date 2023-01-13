@@ -1,9 +1,19 @@
-.iframe-container {
+.app-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+}
+
+.form {
+    margin: 2rem auto;
+}
+
+.form select {
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
 }
 
 .iframe {
