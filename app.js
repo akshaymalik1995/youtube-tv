@@ -11,8 +11,10 @@ function getRandomNumber(num){
 function embedVideo(){
     const iframe = document.querySelector("iframe")
     const randomNum = getRandomNumber(videos.length)
-    const randomVideoID = getYoutubeId(videos[randomNum]) 
-    iframe.src = `https://www.youtube.com/embed/${randomVideoID}`
+    const randomVideo = videos[randomNum]
+    const videoId = getYoutubeId(randomVideo.href) 
+    iframe.src = `https://www.youtube.com/embed/${videoId}`
+    document.querySelector(".video-title").textContent = randomVideo.title
 }
 
 
