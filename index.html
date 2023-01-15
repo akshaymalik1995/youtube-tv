@@ -15,12 +15,13 @@
         <div class="choice-container">
             <form class="form" action="">
                 <label for="cars">Choose a channel:</label>
-                <select class="input-select" onchange=changeVideo() name="channel" id="channel">
-                    <option  selected value>All</option>
-                    <option value="TED-Ed - YouTube">TED-Ed</option>
-                    <option value="The School of Life - YouTube">The School of Life</option>
-                    <option value="Kurzgesagt – In a Nutshell - YouTube">Kurzgesagt – In a Nutshell</option>
-                    <option value="CrashCourse - YouTube">CrashCourse</option>
+                <select class="input-select" onchange=changeChannel() name="channel" id="channel">
+                    
+                    <option selected value="ted-ed">TED-Ed</option>
+                    <option value="the-school-of-life">The School of Life</option>
+                    <option value="kurzgesast-in-a-nutshell">Kurzgesagt – In a Nutshell</option>
+                    <option value="crash-course">CrashCourse</option>
+                    <option value="the-yoga-institute">The Yoga Institute</option>
                 </select>
             </form>
         </div>
@@ -31,7 +32,7 @@
         <button onclick=changeVideo() class="next-video-btn">Next</button>
     </div>
 
-    <script src="videos.js"></script>
+   
     <script src="app.js"></script>
 </body>
 

@@ -1,3 +1,6 @@
+let videos = {}
+let channelChoice = "ted-ed"
+
 function getYoutubeId(url){
     let startIndex = url.indexOf("v=") + 2
     let videoID = url.substring(startIndex, startIndex + 11)
@@ -13,30 +16,37 @@ function embedVideo(startIndex=0 , endIndex=Object.keys(videos).length){
     const iframe = document.querySelector("iframe")
     const randomNum = getRandomNumber(startIndex, endIndex)
     const randomVideo = videos[randomNum]
-    if (!randomVideo) {
-        changeVideo()
-    }
     const videoId = getYoutubeId(randomVideo.href) 
     iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
     document.querySelector(".video-title").textContent = `${randomVideo.title}`
     
 }
 
+function changeChannel() {
+    channelChoice = document.querySelector("select").value
+    fetch(`/js/${channelChoice}.json`)
+    .then(response => response.json())
+    .then(data => {
+        videos = data
+        let startIndex = 0
+        let endIndex = Object.keys(videos).length
+        embedVideo(startIndex, endIndex)
+    })
+    .catch(error => console.log(error))
+}
+
 
 function changeVideo(){
-    const channelChoice = document.querySelector("select").value
-    if (channelChoice == ""){
-        startIndex = 0
-        endIndex = Object.keys(videos).length
-    } else {
-        startIndex = channels[channelChoice].startIndex
-        endIndex = channels[channelChoice].endIndex
-        
-    }
+    startIndex = 0
+    endIndex = Object.keys(videos).length
     embedVideo(startIndex, endIndex)
 }
 
-let startIndex = 0
-let endIndex = Object.keys(videos).length
 
-embedVideo(startIndex, endIndex)
+
+changeChannel()
+
+
+
+
+
