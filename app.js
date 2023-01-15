@@ -23,10 +23,12 @@ function embedVideo(startIndex=0 , endIndex=Object.keys(videos).length){
 }
 
 function changeChannel() {
+    document.querySelector(".loading-text").style.display = 'block'
     channelChoice = document.querySelector("select").value
     fetch(`https://akshaymalik1995.github.io/youtube-tv/js/${channelChoice}.json`)
     .then(response => response.json())
     .then(data => {
+        document.querySelector(".loading-text").style.display = 'none'
         videos = data
         let startIndex = 0
         let endIndex = Object.keys(videos).length
