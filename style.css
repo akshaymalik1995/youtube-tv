@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .app-container {
     display: flex;
     justify-content: center;
@@ -7,10 +11,13 @@
 }
 
 .form {
+    color: grey;
     margin: 2rem auto;
 }
 
 .form select {
+    color: grey;
+    background-color: #333;
     padding: 5px;
     border: 1px solid rgba(128, 128, 128, 0.527);
     border-radius: 5px;
@@ -31,13 +38,14 @@
     margin: 1rem 0px;
     font-weight: bold;
     font-size: 18px;
-    color: #333;
+    color: gray;
     letter-spacing: 0.5px;
 }
 
 
 .next-video-btn {
-    background-color: rgba(0, 0, 255, 0.2);
+    color: grey;
+    background-color: #333;
     margin: 1rem 0;
     padding: 10px 30px;
     outline: none;
@@ -47,5 +55,5 @@
 }
 
 .next-video-btn:hover {
-    background-color: rgba(0, 0, 255, 0.4);
+    background-color: rgba(51, 51, 51, 0.9);
 }
