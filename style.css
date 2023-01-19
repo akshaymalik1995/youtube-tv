@@ -28,6 +28,7 @@ body {
 }
 
 .loading-text {
+    color: grey;
     display: none;
     margin: 1rem 0;
     font-weight: 700;
